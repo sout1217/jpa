@@ -1,0 +1,8 @@
+Api Result Class
+    - create
+        -
+    - update
+    - delete
+    - select
+    - list
+

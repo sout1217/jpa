@@ -1,8 +1,8 @@
-package com.example.jpa.demo.application;
+package com.example.jpa.demo.domain.board.application;
 
 import com.example.jpa.demo.domain.board.Board;
 import com.example.jpa.demo.domain.board.BoardRepository;
-import com.example.jpa.demo.domain.board.dto.request.CreateBoardDto;
+import com.example.jpa.demo.domain.board.dto.BoardDto;
 import com.example.jpa.demo.domain.team.Team;
 import com.example.jpa.demo.domain.team.TeamRepository;
 import com.example.jpa.demo.domain.user.User;
@@ -28,7 +28,7 @@ public class BoardService {
 
     }
 
-    public Board createBoard(CreateBoardDto createBoardDto) {
+    public Board createBoard(BoardDto.Request createBoardDto) {
 
 
         User user = userRepository.findById(createBoardDto.getUserId()).orElseThrow(() -> new IllegalArgumentException("아이디 없음"));

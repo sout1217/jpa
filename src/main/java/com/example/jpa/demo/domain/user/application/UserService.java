@@ -1,4 +1,4 @@
-package com.example.jpa.demo.application;
+package com.example.jpa.demo.domain.user.application;
 
 import org.springframework.stereotype.Service;
 
